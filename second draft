@@ -1,0 +1,150 @@
+# Webpage content based on the user's specifications: edgy, social media-forward, Gen Z marketing appeal, with LinkedIn integration.
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jacqueline A. Garcia - Portfolio and Work Profile">
+    <title>Jacqueline A. Garcia | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1c1c1e;
+            color: #f2f2f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            background-color: #ff1e56;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5em;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px 0;
+        }
+        h2 {
+            font-size: 2em;
+            color: #ff1e56;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        .portfolio {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .portfolio-item {
+            background-color: #2c2c2e;
+            padding: 20px;
+            margin: 20px 0;
+            width: 48%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .portfolio-item h3 {
+            color: #ff1e56;
+            font-size: 1.5em;
+        }
+        .portfolio-item a {
+            color: #ff9f1c;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #2c2c2e;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+        }
+        .socials {
+            margin: 20px 0;
+        }
+        .socials a {
+            color: #ff9f1c;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .linkedin-btn {
+            padding: 10px 20px;
+            background-color: #ff9f1c;
+            color: #1c1c1e;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .linkedin-btn:hover {
+            background-color: #ff1e56;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>Jacqueline A. Garcia</header>
+
+<section>
+    <h2>Work Profile</h2>
+    <p>
+        Hi, I'm Jacqueline, a passionate professional with expertise in marketing, content creation, and social media strategy.
+        I specialize in on-the-pulse marketing that connects brands with Gen Z audiences. With a strong foundation in creative thinking
+        and digital media, I help brands stay relevant in the fast-paced digital world.
+    </p>
+    <a href="https://www.linkedin.com/in/jacqueline-a-garcia/" target="_blank" class="linkedin-btn">Connect with me on LinkedIn</a>
+</section>
+
+<section>
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <h3>Project Title 1</h3>
+            <p>Brief description of your project here. Showcase your creative work, marketing campaigns, or any notable projects.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="portfolio-item">
+            <h3>Project Title 2</h3>
+            <p>Brief description of another project. This section is to highlight your skills and professional achievements.</p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/jacqueline-a-garcia/" target="_blank">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </div>
+    <p>© 2024 Jacqueline A. Garcia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+"""
+
+# Save this to a file
+path = "/mnt/data/jacqueline_garcia_portfolio.html"
+with open(path, "w") as file:
+    file.write(html_content)
+
+path
